@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Sign Up</title>
+    <link
+      rel="shortcut icon"
+      href="../imgs/sign logo.ico"
+      type="image/x-icon"
+    />
+    <link rel="stylesheet" href="../css/all.min.css" />
+    <link rel="stylesheet" href="../css/bootstrap.min.css" />
+    <link rel="stylesheet" href="../css/index.css" />
+  </head>
+  <body>
+    <div
+      class="parent d-flex flex-column align-items-center text-center mx-auto my-5 shadow p-4"
+    >
+      <h1 class="mb-4 text-primary">Smart Login System</h1>
+      <input
+        type="text"
+        placeholder="Enter your Name"
+        class="mb-2 form-control p-2"
+        id="name"
+      />
+      <div class="alert alert-danger w-100 d-none" role="alert" id="nameAlert">
+        User name must be 3 characters or more
+      </div>
+      <input
+        type="email"
+        placeholder="Enter your Email"
+        class="mb-2 form-control p-2"
+        id="email"
+      />
+      <div class="alert alert-danger w-100 d-none" role="alert" id="emailAlert">
+        Email must be a valid one
+      </div>
+      <div class="pass position-relative w-100">
+        <input
+          type="password"
+          placeholder="Enter your password "
+          class="my-2 form-control p-2"
+          id="pass"
+        />
+        <i class="fa-solid fa-eye-slash position-absolute eye"></i>
+        <div class="alert alert-danger d-none" role="alert" id="passAlert">
+          Password must be 8 characters or more
+        </div>
+      </div>
+      <p class="msg"></p>
+      <button class="w-100 p-1 my-2 btn btn-primary" id="save">Sign Up</button>
+      <p>
+        You have an account?
+        <a href="../index.html">Sign In</a>
+      </p>
+    </div>
+    <script src="../js/signUp.js"></script>
+  </body>
+</html>

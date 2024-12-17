@@ -1,0 +1,88 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link
+      rel="shortcut icon"
+      href="../imgs/logo.ico"
+      type="image/x-icon"
+    />
+    <link rel="stylesheet" href="../css/all.min.css" />
+    <link rel="stylesheet" href="../css/bootstrap.min.css" />
+    <link rel="stylesheet" href="../css/index.css" />
+    <link rel="stylesheet" href="../css/main.css">
+    <link rel="stylesheet" href="../css/toastr.min.css">
+    <link rel="stylesheet" href="../css/sweetalert2.min.css">
+    <title>Home</title>
+  </head>
+  <body>
+    <header class="shadow position-fixed top-0 start-0 end-0 bg-light">
+      <div class="container p-3 d-flex justify-content-between">
+        <a href="home.html" class="text-decoration-none text-uppercase fs-4"
+          >smart login</a
+        >
+        <div class="logOut scroll-to-up">
+          <button class="btn btn-warning" id="out">
+            <a href="../index.html" class="text-decoration-none text-black"
+              >Log Out</a
+            >
+          </button>
+        </div>
+        <i
+          class="fa-solid fa-bars fa-2x d-block d-md-none cursor-pointer bars"
+        ></i>
+      </div>
+    </header>
+    <div
+      id="loader"
+      class="loading position-fixed top-0 start-0 bottom-0 end-0 bg-black bg-opacity-50 d-none justify-content-center align-items-center"
+    >
+      <span class="loader"></span>
+    </div>
+    <section class="app p-1">
+      <div class="bg-light rounded p-3 bg-opacity-50 my-5">
+        <div class="d-flex align-items-center justify-content-between">
+          <h4>progress bar</h4>
+          <div
+            class="text-white rounded-circle bg-primary d-flex justify-content-center align-items-center"
+            style="width: 50px; height: 50px"
+          >
+            <span id="completed"></span>/
+            <span id="total"></span>
+          </div>
+        </div>
+
+        <div
+          class="bar bg-primary bg-opacity-25 rounded my-3 overflow-hidden"
+          style="height: 10px"
+        >
+          <div class="inner h-100 bg-primary"></div>
+        </div>
+      </div>
+
+      <form class="d-flex gap-4 bg-light p-4 rounded shadow my-5" id="form">
+        <input
+          type="text"
+          class="form-control"
+          placeholder="Task To Do"
+          id="inp"
+        />
+        <button class="btn btn-primary text-nowrap" id="add">Add Task</button>
+      </form>
+
+      <ul class="bg-light p-4 rounded shadow" id="list"></ul>
+    </section>
+    <!-- sweet alert library -->
+    <script src="../js/sweetalert2@11.js"></script>
+    <!-- jQuery library -->
+    <script src="../js/jquery.min.js"></script>
+    <!-- toastr library -->
+    <script src="../js/toastr.min.js"></script>
+    <!-- Bootstrap JS library -->
+    <script src="../js/bootstrap.bundle.min.js"></script>
+    <!-- JS Main File -->
+    <script src="../js/main.js"></script>
+    <script src="../js/home.js"></script>
+  </body>
+</html>

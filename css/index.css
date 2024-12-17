@@ -1,0 +1,47 @@
+.eye {
+  top: 30px;
+  transform: translateY(-50%);
+  right: 30px;
+  cursor: pointer;
+}
+
+.parent{
+  width: 50%;
+}
+
+.cursor-pointer {
+  cursor: pointer;
+}
+
+@media (max-width: 767px) {
+  .logOut {
+    position: absolute;
+    left: 0;
+    width: 100%;
+    height: 50px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: white;
+    box-shadow: 0 8px 10px rgba(0, 0, 0, 0.15);
+    z-index: -1;
+    transition: 0.3s;
+    -webkit-transition: 0.3s;
+    -moz-transition: 0.3s;
+    -ms-transition: 0.3s;
+    -o-transition: 0.3s;
+  }
+  .scroll-to-down {
+    bottom: -50px;
+    opacity: 1;
+  }
+
+  .scroll-to-up {
+    bottom: 0px;
+    opacity: 0;
+  }
+
+  .parent{
+    width: 75%;
+  }
+}

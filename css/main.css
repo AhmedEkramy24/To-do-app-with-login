@@ -1,0 +1,90 @@
+body {
+  background-color: lightblue;
+}
+
+ul {
+  list-style: none;
+}
+
+.app {
+  width: 50%;
+  margin: 50px auto;
+}
+
+@media (max-width: 776px) {
+  .app {
+    width: 80%;
+  }
+}
+
+.pointer {
+  cursor: pointer;
+}
+
+.task {
+  border-bottom: 1px solid #a8a8a8;
+}
+
+.trash {
+  padding: 4px 6px;
+}
+
+.title {
+  position: relative;
+}
+
+.title::after {
+  content: "click to completed";
+  position: absolute;
+  text-wrap: nowrap;
+  top: 25px;
+  left: 0;
+  color: white;
+  font-size: 10px;
+  background-color: black;
+  padding: 3px;
+  border-radius: 3px;
+  -webkit-border-radius: 3px;
+  -moz-border-radius: 3px;
+  -ms-border-radius: 3px;
+  -o-border-radius: 3px;
+  transition: 0.3s;
+  -webkit-transition: 0.3s;
+  -moz-transition: 0.3s;
+  -ms-transition: 0.3s;
+  -o-transition: 0.3s;
+  opacity: 0;
+  pointer-events: none;
+}
+
+.title:hover::after {
+  opacity: 1;
+}
+
+.loader {
+  width: 48px;
+  height: 48px;
+  border: 5px solid #fff;
+  border-bottom-color: #ff3d00;
+  border-radius: 50%;
+  display: inline-block;
+  box-sizing: border-box;
+  animation: rotation 1s linear infinite;
+}
+
+@keyframes rotation {
+  0% {
+    transform: rotate(0deg);
+  }
+  100% {
+    transform: rotate(360deg);
+  }
+}
+
+.inner {
+  transition: 0.5s;
+  -webkit-transition: 0.5s;
+  -moz-transition: 0.5s;
+  -ms-transition: 0.5s;
+  -o-transition: 0.5s;
+}

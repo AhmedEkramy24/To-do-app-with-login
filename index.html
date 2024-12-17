@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>To Do App With Login</title>
+    <link rel="shortcut icon" href="imgs/logo.ico" type="image/x-icon" />
+    <link rel="stylesheet" href="css/all.min.css" />
+    <link rel="stylesheet" href="css/bootstrap.min.css" />
+    <link rel="stylesheet" href="css/index.css" />
+  </head>
+  <body>
+    <div
+      class="d-flex flex-column align-items-center text-center mx-auto my-5 shadow p-4 parent"
+    >
+      <h1 class="mb-4 text-primary">Smart Login System</h1>
+      <input
+        type="email"
+        placeholder="Enter your Email"
+        class="mb-2 form-control p-2"
+        id="email"
+      />
+      <div class="pass position-relative w-100">
+        <input
+          type="password"
+          placeholder="Enter your password "
+          class="my-2 form-control p-2"
+          id="pass"
+        />
+        <i class="fa-solid fa-eye-slash position-absolute eye"></i>
+      </div>
+      <button class="w-100 p-1 my-2 btn btn-primary" id="btn">
+        <a
+          href="pages/home.html"
+          class="text-white text-decoration-none w-100 d-block"
+          id="login"
+          >Login</a
+        >
+      </button>
+      <p id="msg" class="text-danger"></p>
+      <p>
+        Don’t have an account?
+        <a href="pages/signUp.html">Sign Up</a>
+      </p>
+    </div>
+    <script src="js/signIn.js"></script>
+  </body>
+</html>
